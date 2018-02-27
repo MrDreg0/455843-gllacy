@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anton Shumihin](https://up.htmlacademy.ru/htmlcss/20/user/455843).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлька Долгун](https://up.htmlacademy.ru/htmlcss/20/user/42333).
 
 ---
 

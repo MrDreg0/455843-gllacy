@@ -13,7 +13,7 @@
 					<img src="img/svg/logo.svg" alt="Логотип магазина GllacyShop" width="154" height="64">
 				</a>
 				<ul class="site-navigation">
-					<li><a href="catalog.html">Каталог</a>
+					<li class="nav-catalog-item"><a href="catalog.html" >Каталог</a>
 						<!-- Блок меню каталога -->
 						<ul class="nav-catalog-list">
 							<li><a href="#">Новинки</a></li>
@@ -30,18 +30,18 @@
 			</nav>
 			<ul class="user-navgation">
 				<li class='search-item'>
-					<span class="seach">Поиск</span>
+					<button type='button' class="header-seach">Поиск</button>
 					<!-- Начало блока меню поиска -->
-					<form action="#" class='search-form'>
+					<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
 						<input type="search" placeholder="Что ищем?" name='search'>
 					</form>
 					<!-- Конец блока меню поиска -->
 				</li>
-				<li class="login-link-item">
-					<span class='login-link'>Вход</span>
+				<li class="login-item">
+					<button type='button' class='header-login'>Вход</button>
 					<!-- Начало блока меню входа -->
-					<form action="#" class='login-form'>
-						<input type="text" name='email' placeholder="Электронная почка">
+					<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
+						<input type="email" name='email' placeholder="Электронная почта">
 						<input type="password" name='password' placeholder="Пароль">
 						<input type="submit" value="Войти">
 					</form>
@@ -49,7 +49,34 @@
 					<a href="#" class="menu-login-registration">Новая регистрация</a>
 					<!-- Конец блока меню входа -->
 				</li>
-				<li class='basket'>Пусто</li>
+				<li class='basket-item'>
+					<button type='button' class='header-basket'>Пусто</button>
+
+					<!-- Начало формы корзины -->
+					<form action="https://echo.htmlacademy.ru" method="post" class='basket-form'>
+						<ul class="basket-form-items">
+							<li class="basket-item-1">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								Пломбир с апельсиновым джемом
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">200 руб.</span>
+								<span class="basket-item_price">300 руб.</span>
+							</li>
+							<li class="basket-item-2">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								Клубничный пломбир с присыпкой из белого шоколада
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">300 руб.</span>
+								<span class="basket-item_price">450 руб.</span>
+							</li>
+						</ul>
+						<hr>
+						<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
+						<input type="submit" value='Оформить заказ'>
+					</form>
+					<!-- Конец формы корзины -->
+
+				</li>
 			</ul>
 			<span class="header-worktime">С 10 до 20, ежедневно</span>
 			<span class="header-phone-number">8 812 450-25-25</span>
@@ -59,17 +86,19 @@
 		<!-- Начало основного блока -->
 		<main class="container">
 			<!-- Начало галереи -->
-			<div class="gallery">
+			<section class="gallery">
+				<h2 class="visually-hidden">Галерея лучших товаров</h2>
 				<h3 class="gallery-description-item">Крем-брюле и пломбир с малиновым джемом</h3>
-				<a href="#" class="main-gallery-button">Давайте оба!</a>
+				<button type='button' class="main-gallery-button">Давайте оба!</button>
 				<input type="radio" id='img1' name='images' checked>
 				<input type="radio" id='img2' name='images'>
 				<input type="radio" id='img3' name='images'>
-			</div>
+			</section>
 			<!-- Конец галереи -->
 
 			<!-- Начало секции предложений -->
 			<section class="main-offers">
+				<h2 class="visually-hidden">Специальные предложения</h2>
 				<ul class="offer-items">
 					<li class="offer-item-1">
 						<h3>Малинка даром!</h3>
@@ -87,6 +116,7 @@
 			
 			<!-- Начало секции мини каталога -->
 			<section class="main-hits_catalog">
+				<h2 class="visually-hidden">Каталог хитов</h2>
 				<ul class="hit-catalog-items">
 					<li class="hit-catalog-item-1">
 						<a href='#'>
@@ -134,6 +164,7 @@
 			
 			<!-- Начало секции преимуществ -->
 			<section class="main-features">
+				<h2 class="visually-hidden">Преимущества нашего магазина</h2>
 				<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
 				<ul class="features-list">
 					<li class="feature-item">
@@ -154,8 +185,9 @@
 
 			<!-- Начало секции новостного мини блога -->
 			<section class="main-blog">
+				<h2 class="visually-hidden">Мини блог</h2>
 				<div class="main-blog-news">
-					<h5>Новое в нашем блоге</h5>
+					<h3>Новое в нашем блоге</h3>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</div>
 				<div class="main-feedback_form">
@@ -169,17 +201,18 @@
 			<!-- Конец секции новостного мини блога -->
 			
 			<!-- Начало блока карты -->
-			<div class="main-map">
+			<section class="main-map">
+				<h2 class="visually-hidden">Наши координаты</h2>
 				<div class="map"></div>
 				<div class="contacts">
-					<h5>Адрес главного офиса и офлайн-магазина:</h5>
+					<h3>Адрес главного офиса и офлайн-магазина:</h3>
 					<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
 					<h5>Для заказов по телефону:</h5>
 					<p>8 812 450-25-25</p>
 					<span>(с 10 до 20 ежедневно)</span>
 					<button class="feedback-form">Форма обратной связи</button>
 				</div>
-			</div>
+			</section>
 			<!-- Конец блока карты -->
 
 		</main>
@@ -209,8 +242,8 @@
 
 		<!-- Начало блока формы обратной связи -->
 		<div class="block-feedback-form">
-			<h3>Мы обязательно вам ответим!</h3><span>x</span>
-			<form action="#" class='feedback-form'>
+			<h3>Мы обязательно вам ответим!</h3><button type='button' name='Закрыть'>Закрыть</button>
+			<form action="https://echo.htmlacademy.ru" method='post' class='feedback-form'>
 				<input type="text" name='name' id='name' placeholder="Как вас зовут?">
 				<input type="text" name="email" id="email" placeholder="Ваша почта для ответа?">
 				<textarea class='text-area' id='text-area' rows='5' cols='40' placeholder="Напишите что-нибудь..."></textarea>

@@ -19,9 +19,54 @@
 				</ul>
 			</nav>
 			<ul class="user-navgation">
-				<li class='search'>Поиск</li>
-				<li class="login-link">Вход</li>
-				<li class='basket'>2 товара</li>
+				<li class='search-item'>
+					<button type='button' class="header-seach">Поиск</button>
+					<!-- Начало блока меню поиска -->
+					<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
+						<input type="search" placeholder="Что ищем?" name='search'>
+					</form>
+					<!-- Конец блока меню поиска -->
+				</li>
+				<li class="login-item">
+					<button type='button' class='header-login'>Вход</button>
+					<!-- Начало блока меню входа -->
+					<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
+						<input type="email" name='email' placeholder="Электронная почта">
+						<input type="password" name='password' placeholder="Пароль">
+						<input type="submit" value="Войти">
+					</form>
+					<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
+					<a href="#" class="menu-login-registration">Новая регистрация</a>
+					<!-- Конец блока меню входа -->
+				</li>
+				<li class='basket-item'>
+					<button type='button' class='header-basket'>2 товара</button>
+
+					<!-- Начало формы корзины -->
+					<form action="https://echo.htmlacademy.ru" method="post" class='basket-form'>
+						<ul class="basket-form-items">
+							<li class="basket-item-1">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								Пломбир с апельсиновым джемом
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">200 руб.</span>
+								<span class="basket-item_price">300 руб.</span>
+							</li>
+							<li class="basket-item-2">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								Клубничный пломбир с присыпкой из белого шоколада
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">300 руб.</span>
+								<span class="basket-item_price">450 руб.</span>
+							</li>
+						</ul>
+						<hr>
+						<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
+						<input type="submit" value='Оформить заказ'>
+					</form>
+					<!-- Конец формы корзины -->
+
+				</li>
 			</ul>
 			<span class="header-worktime">С 10 до 20, ежедневно</span>
 			<span class="header-phone-number">8 812 450-25-25</span>
@@ -37,9 +82,67 @@
 		
 		<!-- Начало основного блока каталога -->
 		<main class="container">
-			<h2 class="catalog-list-name">Сливочное мороженое</h2>
+			<h1 class="catalog-list-name">Сливочное мороженое</h2>
 			<!-- Форма сортировки -->
-			<form action="#" class="catalog-sort"></form>
+			<h2 class="visually-hidden">Форма сортировки и каталог товаров</h2>
+			<form action="https://echo.htmlacademy.ru" class="catalog-sort">
+				<label for="sort-type">
+					Сортировка:
+					<select name="sort-type" id="sort-type">
+						<option value="popular" selected>по популярности</option>
+						<option value="low-price">сначала недорогие</option>
+						<option value="high-price">сначала дорогие</option>
+						<option value="milk-fat">по жирности</option>
+					</select>
+				</label>
+				<label for="range">
+					Цена: <span class="low-range">100</span> руб. - <span class="high-range">500</span> руб.
+					<input type="range" id='range' min='0' max='1000'>
+				</label>
+				<label>
+					Жирность:
+					<label for="milk-fat-0">
+						0%
+						<input type="radio" name='milk-fat' id='milk-fat-0' value='0'>
+					</label>
+					<label for="milk-fat-normal">
+						до 10%
+						<input type="radio" name='milk-fat' id='milk-fat-normal' value='normal' checked>
+					</label>
+					<label for="milk-fat-high">
+						до 30%
+						<input type="radio" name='milk-fat' id='milk-fat-high' value='high'>
+					</label>
+					<label for="milk-fat-very_high">
+						выше 30%
+						<input type="radio" name='milk-fat' id='milk-fat-very_high' value='very_high'>
+					</label>
+				</label>
+				<label>
+					Наполнители:
+					<label for="chocolate">
+						шоколадные
+						<input type="checkbox" name='chocolate' id='chocolate' checked>
+					</label>
+					<label for="sugar-powder">
+						сахарные присыпки
+						<input type="checkbox" name='sugar-powder' id='sugar-powder' checked>
+					</label>
+					<label for="fruit">
+						фрукты
+						<input type="checkbox" name='fruit' id='fruit'>
+					</label>
+					<label for="syrup">
+						сиропы
+						<input type="checkbox" name='syrup' id='syrup'>
+					</label>
+					<label for="jam">
+						джемы
+						<input type="checkbox" name='jam' id='jam'>
+					</label>
+				</label>
+				<input type="submit" name='apply' value='Применить'>
+			</form>
 			<!-- Конец формы сортировки -->
 			
 			<!-- Начало блока с товаром -->

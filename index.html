@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>GllacyShop</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -28,9 +30,9 @@
 					<li><a href="about.html">О Компании</a></li>
 				</ul>
 			</nav>
-			<ul class="user-navgation">
+			<ul class="user-navigation">
 				<li class='search-item'>
-					<button type='button' class="header-seach">Поиск</button>
+					<button type='button' class="header-button">Поиск</button>
 					<!-- Начало блока меню поиска -->
 					<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
 						<input type="search" placeholder="Что ищем?" name='search'>
@@ -38,42 +40,21 @@
 					<!-- Конец блока меню поиска -->
 				</li>
 				<li class="login-item">
-					<button type='button' class='header-login'>Вход</button>
+					<button type='button' class='header-button'>Вход</button>
 					<!-- Начало блока меню входа -->
-					<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
-						<input type="email" name='email' placeholder="Электронная почта">
-						<input type="password" name='password' placeholder="Пароль">
-						<input type="submit" value="Войти">
-					</form>
-					<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
-					<a href="#" class="menu-login-registration">Новая регистрация</a>
+					<div class="login-block">
+						<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
+							<input type="email" name='email' placeholder="Электронная почта">
+							<input type="password" name='password' placeholder="Пароль">
+							<input type="submit" class='button'  value="Войти">
+						</form>
+						<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
+						<a href="#" class="menu-login-registration">Новая регистрация</a>
+					</div>
 					<!-- Конец блока меню входа -->
 				</li>
 				<li class='basket-item'>
-					<button type='button' class='header-basket'>Пусто</button>
-
-					<!-- Начало блока корзины -->
-					<ul class="basket-form-items">
-						<li class="basket-item-1">
-							<button type='button' class='remove-basket-item'>Убрать</button>
-							Пломбир с апельсиновым джемом
-							<span class="basket-amount">1,5 кг x </span>
-							<span class="basket-price">200 руб.</span>
-							<span class="basket-item_price">300 руб.</span>
-						</li>
-						<li class="basket-item-2">
-							<button type='button' class='remove-basket-item'>Убрать</button>
-							Клубничный пломбир с присыпкой из белого шоколада
-							<span class="basket-amount">1,5 кг x </span>
-							<span class="basket-price">300 руб.</span>
-							<span class="basket-item_price">450 руб.</span>
-						</li>
-					</ul>
-					<hr>
-					<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
-					<input type="submit" value='Оформить заказ'>
-					<!-- Конец блока корзины -->
-
+					<button type='button' class='header-button'>Пусто</button>
 				</li>
 			</ul>
 			<span class="header-worktime">С 10 до 20, ежедневно</span>
@@ -87,7 +68,7 @@
 			<section class="gallery">
 				<h2 class="visually-hidden">Галерея лучших товаров</h2>
 				<h3 class="gallery-description-item">Крем-брюле и пломбир с малиновым джемом</h3>
-				<button type='button' class="main-gallery-button">Давайте оба!</button>
+				<a href="#" class="button">Давайте оба!</a>
 				<input type="radio" id='img1' name='images' checked>
 				<input type="radio" id='img2' name='images'>
 				<input type="radio" id='img3' name='images'>
@@ -101,12 +82,12 @@
 					<li class="offer-item-1">
 						<h3>Малинка даром!</h3>
 						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a href="#" class="main-button">Хочу варенье!</a>
+						<a href="#" class="button">Хочу варенье!</a>
 					</li>
 					<li class="offer-item-2">
 						<h3>Шоколадки даром!</h3>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a href="#" class="main-button">Хочу шоколадки!</a>
+						<a href="#" class="button">Хочу шоколадки!</a>
 					</li>
 				</ul>
 			</section>
@@ -115,43 +96,39 @@
 			<!-- Начало секции мини каталога -->
 			<section class="main-hits_catalog">
 				<h2 class="visually-hidden">Каталог хитов</h2>
-				<ul class="hit-catalog-items">
-					<li class="hit-catalog-item-1">
+				<ul class="catalog-items">
+					<li class="catalog-item-1">
 						<a href='#'>
 							<img src="img/jpg/catalog-img-1.jpg" alt='Сливочное с апельсиновым джемом и цитрусовой стружкой' class="catalog-img" width='267' height='267' >
 							<b>310
-								<span class="price">&#8381;</span>
-								<span class="amount">/кг</span>
+								<span class="price">&#8381;</span><span class="amount">/кг</span>
 							</b>
 							<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 						</a>
 					</li>
-					<li class="hit-catalog-item-2">
+					<li class="catalog-item-2">
 						<a href='#'>
 							<img src="img/jpg/catalog-img-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="catalog-img" width='267' height='267'>
 							<b>380
-								<span class="price">&#8381;</span>
-								<span class="amount">/кг</span>
+								<span class="price">&#8381;</span><span class="amount">/кг</span>
 							</b>
 							<h3>Сливочно-кофейное с кусочками шоколада</h3>
 						</a>
 					</li>
-					<li class="hit-catalog-item-3">
+					<li class="catalog-item-3">
 						<a href='#'>
 							<img src="img/jpg/catalog-img-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="catalog-img" width='267' height='267'>
 							<b>355
-								<span class="price">&#8381;</span>
-								<span class="amount">/кг</span>
+								<span class="price">&#8381;</span><span class="amount">/кг</span>
 							</b>
 							<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
 						</a>
 					</li>
-					<li class="hit-catalog-item-4">
+					<li class="catalog-item-4">
 						<a href='#'>
 							<img src="img/jpg/catalog-img-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="catalog-img" width='267' height='267'>
 							<b>415
-								<span class="price">&#8381;</span>
-								<span class="amount">/кг</span>
+								<span class="price">&#8381;</span><span class="amount">/кг</span>
 							</b>
 							<h3>Сливочное крем-брюле с карамельной подливкой</h3>
 						</a>
@@ -165,16 +142,16 @@
 				<h2 class="visually-hidden">Преимущества нашего магазина</h2>
 				<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
 				<ul class="features-list">
-					<li class="feature-item">
+					<li>
 						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 					</li>
-					<li class="feature-item">
+					<li>
 						Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
 					</li>
-					<li class="feature-item">
+					<li>
 						Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 					</li>
-					<li class="feature-item">
+					<li>
 						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 					</li>
 				</ul>
@@ -186,13 +163,13 @@
 				<h2 class="visually-hidden">Мини блог</h2>
 				<div class="main-blog-news">
 					<h3>Новое в нашем блоге</h3>
-					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+					<a href="#">10 способов сервировки<br> фруктовых щербетов к<br> столу</a>
 				</div>
 				<div class="main-feedback_form">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form action="#">
-						<input type="text" placeholder='Электронная почта'>
-						<input type="submit" name='submit-subscription' id='submit-subscription' value='Отправить'>
+						<input type="email" placeholder='Электронная почта'>
+						<input type="submit" name='submit-subscription' id='submit-subscription' class='button' value='Отправить'>
 					</form>
 				</div>
 			</section>
@@ -201,14 +178,13 @@
 			<!-- Начало блока карты -->
 			<section class="main-map">
 				<h2 class="visually-hidden">Наши координаты</h2>
-				<div class="map"></div>
 				<div class="contacts">
-					<h3>Адрес главного офиса и офлайн-магазина:</h3>
-					<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-					<h5>Для заказов по телефону:</h5>
-					<p>8 812 450-25-25</p>
+					<p>Адрес главного офиса и офлайн-магазина:</p>
+					<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+					<p>Для заказов по телефону:</p>
+					<b>8 812 450-25-25</b>
 					<span>(с 10 до 20 ежедневно)</span>
-					<button class="feedback-form">Форма обратной связи</button>
+					<button class="button">Форма обратной связи</button>
 				</div>
 			</section>
 			<!-- Конец блока карты -->
@@ -240,12 +216,12 @@
 
 		<!-- Начало блока формы обратной связи -->
 		<div class="block-feedback-form">
-			<h3>Мы обязательно вам ответим!</h3><button type='button' name='Закрыть'>Закрыть</button>
+			<h3>Мы обязательно вам ответим!</h3><button type='button' class='close-button' name='Закрыть'>Закрыть</button>
 			<form action="https://echo.htmlacademy.ru" method='post' class='feedback-form'>
 				<input type="text" name='name' id='name' placeholder="Как вас зовут?">
 				<input type="text" name="email" id="email" placeholder="Ваша почта для ответа?">
 				<textarea class='text-area' id='text-area' rows='5' cols='40' placeholder="Напишите что-нибудь..."></textarea>
-				<input type="submit" name='submit-feedback' id='submit-feedback' value='Отправить'>
+				<input type="submit" name='submit-feedback' class='button' id='submit-feedback' value='Отправить'>
 			</form>
 		</div>
 		<!-- Конец блока формы обратной связи -->

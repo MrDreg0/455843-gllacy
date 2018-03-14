@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Catalog GllacyShop</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -13,14 +15,14 @@
 					<img src="img/svg/logo.svg" alt="Логотип магазина GllacyShop" width="154" height="64">
 				</a>
 				<ul class="site-navigation">
-					<li>Каталог</li>
+					<li class="active">Каталог</li>
 					<li><a href="delivery.html">Доставка и оплата</a></li>
 					<li><a href="about.html">О Компании</a></li>
 				</ul>
 			</nav>
-			<ul class="user-navgation">
+			<ul class="user-navigation">
 				<li class='search-item'>
-					<button type='button' class="header-seach">Поиск</button>
+					<button type='button' class="header-button">Поиск</button>
 					<!-- Начало блока меню поиска -->
 					<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
 						<input type="search" placeholder="Что ищем?" name='search'>
@@ -28,42 +30,48 @@
 					<!-- Конец блока меню поиска -->
 				</li>
 				<li class="login-item">
-					<button type='button' class='header-login'>Вход</button>
+					<button type='button' class='header-button'>Вход</button>
 					<!-- Начало блока меню входа -->
-					<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
-						<input type="email" name='email' placeholder="Электронная почта">
-						<input type="password" name='password' placeholder="Пароль">
-						<input type="submit" value="Войти">
-					</form>
-					<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
-					<a href="#" class="menu-login-registration">Новая регистрация</a>
+					<div class="login-block">
+						<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
+							<input type="email" name='email' placeholder="Электронная почта">
+							<input type="password" name='password' placeholder="Пароль">
+							<input type="submit" class='button'  value="Войти">
+						</form>
+						<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
+						<a href="#" class="menu-login-registration">Новая регистрация</a>
+					</div>
 					<!-- Конец блока меню входа -->
 				</li>
 				<li class='basket-item'>
-					<button type='button' class='header-basket'>2 товара</button>
+					<button type='button' class='header-button adds'>2 товара</button>
 
 					<!-- Начало блока корзины -->
-					<ul class="basket-form-items">
-						<li class="basket-item-1">
-							<button type='button' class='remove-basket-item'>Убрать</button>
-							Пломбир с апельсиновым джемом
-							<span class="basket-amount">1,5 кг x </span>
-							<span class="basket-price">200 руб.</span>
-							<span class="basket-item_price">300 руб.</span>
-						</li>
-						<li class="basket-item-2">
-							<button type='button' class='remove-basket-item'>Убрать</button>
-							Клубничный пломбир с присыпкой из белого шоколада
-							<span class="basket-amount">1,5 кг x </span>
-							<span class="basket-price">300 руб.</span>
-							<span class="basket-item_price">450 руб.</span>
-						</li>
-					</ul>
-					<hr>
-					<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
-					<input type="submit" value='Оформить заказ'>
+					<div class="basket-form">
+						<ul class="basket-form-items">
+							<li class="basket-item-1">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								<img src="img/jpg/catalog-img-1.jpg" width='33' height='33' alt="Пломбир с апельсиновым джемом">
+								<span class="description">Пломбир с апельсиновым джемом</span>
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">200 руб.</span>
+								<span class="basket-item_price">300 руб.</span>
+							</li>
+							<li class="basket-item-2">
+								<button type='button' class='remove-basket-item'>Убрать</button>
+								<img src="img/jpg/catalog-img-3.jpg" width='33' height='33' alt="Клубничный пломбир с присыпкой из белого шоколада">
+								<span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
+								<span class="basket-amount">1,5 кг x </span>
+								<span class="basket-price">300 руб.</span>
+								<span class="basket-item_price">450 руб.</span>
+							</li>
+						</ul>
+						<hr>
+						<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
+						<input type="submit" class='button' value='Оформить заказ'>
+					</div>
 					<!-- Конец блока корзины -->
-
+				
 				</li>
 			</ul>
 			<span class="header-worktime">С 10 до 20, ежедневно</span>
@@ -79,7 +87,7 @@
 		<!-- Конец шапки -->
 		
 		<!-- Начало основного блока каталога -->
-		<main class="container">
+		<main class="container catalog">
 			<h1 class="catalog-list-name">Сливочное мороженое</h2>
 			<!-- Форма сортировки -->
 			<h2 class="visually-hidden">Форма сортировки и каталог товаров</h2>
@@ -140,7 +148,7 @@
 			<!-- Конец формы сортировки -->
 			
 			<!-- Начало блока с товаром -->
-			<ul class="catalog-list">
+			<ul class="catalog-items">
 				<li class="catalog-item-1">
 					<a href='#'>
 						<img src="img/jpg/catalog-img-1.jpg" alt='Сливочное с апельсиновым джемом и цитрусовой стружкой' class="catalog-img" width='267' height='267' >
@@ -277,7 +285,6 @@
 		</main>
 		<!-- Конец основного блока каталога -->
 
-		<!-- Начало подвала -->
 		<footer class="main-footer">
 			<ul class="social-button">
 				<li><a href="#">Twitter</a></li>
@@ -286,10 +293,12 @@
 				<li><a href="#">Вконтакте</a></li>
 			</ul>
 			<nav class="footer-navigation">
-				<a href="#">&hearts;Для поставщиков</a>
-				<a href="#">О производстве</a>
-				<a href="#">Наши документы</a>
-				<a href="#">Экологические стандарты</a>
+				<ul class="footer-navigation-list">
+					<li><a href="#">&hearts;Для поставщиков</a></li>
+					<li><a href="#">О производстве</a></li>
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
 			</nav>
 			<div class="footer-copyrights">
 				<a href="https://htmlacademy.ru" class="footer-copyrights-logo"><img src="img/svg/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">Сделано в HTML Academy &copy; 2017</a>

@@ -9,86 +9,88 @@
 	</head>
 	<body>
 		<!-- Начало шапки -->
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a href="index.html" class="header-logo">
-					<img src="img/svg/logo.svg" alt="Логотип магазина GllacyShop" width="154" height="64">
-				</a>
-				<ul class="site-navigation">
-					<li class="active">Каталог</li>
-					<li><a href="delivery.html">Доставка и оплата</a></li>
-					<li><a href="about.html">О Компании</a></li>
-				</ul>
-			</nav>
-			<ul class="user-navigation">
-				<li class='search-item'>
-					<button type='button' class="header-button">Поиск</button>
-					<!-- Начало блока меню поиска -->
-					<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
-						<input type="search" placeholder="Что ищем?" name='search'>
-					</form>
-					<!-- Конец блока меню поиска -->
-				</li>
-				<li class="login-item">
-					<button type='button' class='header-button'>Вход</button>
-					<!-- Начало блока меню входа -->
-					<div class="login-block">
-						<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
-							<input type="email" name='email' placeholder="Электронная почта">
-							<input type="password" name='password' placeholder="Пароль">
-							<input type="submit" class='button'  value="Войти">
+		<header class="container creamy">
+			<div class="main-nav-wrapper">
+				<nav class="main-navigation">
+					<a href="index.html" class="header-logo">
+						<img src="img/svg/logo.svg" alt="Логотип магазина GllacyShop" width="154" height="64">
+					</a>
+					<ul class="site-navigation">
+						<li class="active">Каталог</li>
+						<li><a href="delivery.html">Доставка и оплата</a></li>
+						<li><a href="about.html">О Компании</a></li>
+					</ul>
+				</nav>
+				<ul class="user-navigation">
+					<li class='search-item'>
+						<button type='button' class="header-button">Поиск</button>
+						<!-- Начало блока меню поиска -->
+						<form action="https://echo.htmlacademy.ru" method="post" class='search-form'>
+							<input type="search" placeholder="Что ищем?" name='search'>
 						</form>
-						<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
-						<a href="#" class="menu-login-registration">Новая регистрация</a>
-					</div>
-					<!-- Конец блока меню входа -->
-				</li>
-				<li class='basket-item'>
-					<button type='button' class='header-button adds'>2 товара</button>
+						<!-- Конец блока меню поиска -->
+					</li>
+					<li class="login-item">
+						<button type='button' class='header-button'>Вход</button>
+						<!-- Начало блока меню входа -->
+						<div class="login-block">
+							<form action="https://echo.htmlacademy.ru" method="post" class='login-form'>
+								<input type="email" name='email' placeholder="Электронная почта">
+								<input type="password" name='password' placeholder="Пароль">
+								<input type="submit" class='button'  value="Войти">
+							</form>
+							<a href="#" class="menu-login-forgot_password">Забыли пароль?</a>
+							<a href="#" class="menu-login-registration">Новая регистрация</a>
+						</div>
+						<!-- Конец блока меню входа -->
+					</li>
+					<li class='basket-item'>
+						<button type='button' class='header-button adds'>2 товара</button>
 
-					<!-- Начало блока корзины -->
-					<div class="basket-form">
-						<ul class="basket-form-items">
-							<li class="basket-item-1">
-								<button type='button' class='remove-basket-item'>Убрать</button>
-								<img src="img/jpg/catalog-img-1.jpg" width='33' height='33' alt="Пломбир с апельсиновым джемом">
-								<span class="description">Пломбир с апельсиновым джемом</span>
-								<span class="basket-amount">1,5 кг x </span>
-								<span class="basket-price">200 руб.</span>
-								<span class="basket-item_price">300 руб.</span>
-							</li>
-							<li class="basket-item-2">
-								<button type='button' class='remove-basket-item'>Убрать</button>
-								<img src="img/jpg/catalog-img-3.jpg" width='33' height='33' alt="Клубничный пломбир с присыпкой из белого шоколада">
-								<span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
-								<span class="basket-amount">1,5 кг x </span>
-								<span class="basket-price">300 руб.</span>
-								<span class="basket-item_price">450 руб.</span>
-							</li>
-						</ul>
-						<hr>
-						<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
-						<input type="submit" class='button' value='Оформить заказ'>
-					</div>
-					<!-- Конец блока корзины -->
-				
-				</li>
-			</ul>
+						<!-- Начало блока корзины -->
+						<div class="basket-form">
+							<ul class="basket-form-items">
+								<li class="basket-item-1">
+									<button type='button' class='remove-basket-item'>Убрать</button>
+									<img src="img/jpg/catalog-img-1.jpg" width='33' height='33' alt="Пломбир с апельсиновым джемом">
+									<span class="description">Пломбир с апельсиновым джемом</span>
+									<span class="basket-amount">1,5 кг x </span>
+									<span class="basket-price">200 руб.</span>
+									<span class="basket-item_price">300 руб.</span>
+								</li>
+								<li class="basket-item-2">
+									<button type='button' class='remove-basket-item'>Убрать</button>
+									<img src="img/jpg/catalog-img-3.jpg" width='33' height='33' alt="Клубничный пломбир с присыпкой из белого шоколада">
+									<span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
+									<span class="basket-amount">1,5 кг x </span>
+									<span class="basket-price">300 руб.</span>
+									<span class="basket-item_price">450 руб.</span>
+								</li>
+							</ul>
+							<hr>
+							<b class="basket-total">Итого: <span class="basket-total-price">750 руб.</span></b>
+							<input type="submit" class='button' value='Оформить заказ'>
+						</div>
+						<!-- Конец блока корзины -->	
+
+					</li>
+				</ul>
+			</div>
 			<span class="header-worktime">С 10 до 20, ежедневно</span>
 			<span class="header-phone-number">8 812 450-25-25</span>
-			<ul class="catalog-breadcrumbs">
+			<ul class="catalog_creamy-breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li>»</li>
-				<li>Каталог</li>
+				<li><a href="#">Каталог</a></li>
 				<li>»</li>
-				<li><a href="#">Сливочное</a></li>
+				<li>Сливочное</li>
 			</ul>
 		</header>
 		<!-- Конец шапки -->
 		
 		<!-- Начало основного блока каталога -->
 		<main class="container catalog">
-			<h1 class="catalog-list-name">Сливочное мороженое</h2>
+			<h1 class="catalog_creamy-list-name">Сливочное мороженое</h2>
 			<!-- Форма сортировки -->
 			<h2 class="visually-hidden">Форма сортировки и каталог товаров</h2>
 			<form action="https://echo.htmlacademy.ru" class="catalog-sort">
@@ -148,7 +150,7 @@
 			<!-- Конец формы сортировки -->
 			
 			<!-- Начало блока с товаром -->
-			<ul class="catalog-items">
+			<ul class="catalog-items creamy">
 				<li class="catalog-item-1">
 					<a href='#'>
 						<img src="img/jpg/catalog-img-1.jpg" alt='Сливочное с апельсиновым джемом и цитрусовой стружкой' class="catalog-img" width='267' height='267' >
@@ -273,7 +275,8 @@
 			<!-- Конец блока с товаром -->
 
 			<!-- Начало переключателя страниц товара -->
-			<ul class="catalog-lists">
+			<ul class="catalog_creamy-lists">
+				<li class="catalog-list-item-pver"><</a></li>
 				<li class="catalog-list-item-1">1</li>
 				<li class="catalog-list-item-2"><a href="#">2</a></li>
 				<li class="catalog-list-item-3"><a href="#">3</a></li>
@@ -285,7 +288,8 @@
 		</main>
 		<!-- Конец основного блока каталога -->
 
-		<footer class="main-footer">
+		<!-- Начало подвала -->
+		<footer class="main-footer container">
 			<ul class="social-button">
 				<li><a href="#">Twitter</a></li>
 				<li><a href="#">Instagram</a></li>
@@ -294,17 +298,23 @@
 			</ul>
 			<nav class="footer-navigation">
 				<ul class="footer-navigation-list">
-					<li><a href="#">&hearts;Для поставщиков</a></li>
-					<li><a href="#">О производстве</a></li>
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
+					<div class="footer-nav-wrapper">
+						<li><b><a href="#">Для поставщиков</a></b></li>
+						<li><a href="#">О производстве</a></li>
+					</div>
+					<div class="footer-nav-wrapper">
+						<li><a href="#">Наши документы</a></li>
+						<li><a href="#">Экологические стандарты</a></li>
+					</div>
 				</ul>
 			</nav>
 			<div class="footer-copyrights">
-				<a href="https://htmlacademy.ru" class="footer-copyrights-logo"><img src="img/svg/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">Сделано в HTML Academy &copy; 2017</a>
+				<img src="img/svg/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
+				<a href="https://htmlacademy.ru" class="footer-copyrights-logo">Сделано в HTML Academy &copy; 2017</a>
 			</div>
 		</footer>
 		<!-- Конец подвала -->
+		
 		<script src="js/main.js"></script>
 	</body>
 </html>

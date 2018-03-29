@@ -254,7 +254,7 @@ header.container {
 	position: relative;
 }
 
-.user-navigation li {
+.user-navigation > li {
 	margin-bottom: 5px;
 }
 
@@ -404,6 +404,15 @@ header.container {
 	position: relative;
 }
 
+.basket-item::before {
+	position: absolute;
+	content: '';
+	width: 117px;
+	height: 5px;
+	top: 32px;
+	left: 0;
+}
+
 .basket-item svg {
 	position: absolute;
 	top: 7px;
@@ -441,7 +450,7 @@ header.container {
 	background-color: #f8f7f4;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
-	padding: 20px 16px;
+	padding: 20px 16px 21px;
 	color: #323232;
 	font-weight: 400;
 	font-size: 13px;
@@ -470,7 +479,7 @@ header.container {
 }
 
 .basket-form-item img {
-	margin-left: 8px;
+	margin-left: 14px;
 	border-radius: 50px;
 }
 
@@ -501,13 +510,14 @@ header.container {
 	font-size: 15px;
 	line-height: 18px;
 	text-align: right;
-	margin-bottom: 14px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .basket-form .button {
 	float: right;
 	display: block;
-	padding: 12px 14px;
+	padding: 10px 14px;
 	text-align: right;
 }
 
@@ -599,7 +609,7 @@ main.catalog {
 }
 
 .form-style {
-	padding: 7px 15px;
+	padding: 7px 14px;
 	margin: 0;
 	border: none;
 	background-color: rgba(248, 247, 244, 0.2);
@@ -1136,6 +1146,7 @@ main.catalog {
 .catalog-item b {
 	padding: 0;
 	margin: 0;
+	left: 0;
 	position: absolute;
 	font-size: 45px;
 	line-height: 45px;
@@ -1346,6 +1357,10 @@ b.contacts-address {
 
 p.contacts-tel-title {
 	margin-bottom: 3px;
+}
+
+.contacts-tel a {
+	color: inherit;
 }
 
 .contacts span {

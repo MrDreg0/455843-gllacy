@@ -725,6 +725,7 @@ main.catalog {
 	box-shadow: 0px 0px 0 4px #ffffff;
 	transition: background-color 0.2s;
 	cursor: pointer;
+	opacity: 0.8;
 }
 
 #milk-fat-1:checked ~ .milk-fat-wrapper label[for='milk-fat-1']::before,
@@ -781,6 +782,7 @@ main.catalog {
 	height: 20px;
 	border: none;
 	cursor: pointer;
+	opacity: 0.8;
 }
 
 #filler-1:checked ~ .filler-wrapper label[for='filler-1']::before,
@@ -792,6 +794,7 @@ main.catalog {
 	background-repeat: no-repeat;
 	background-size: 24px;
 	background-position-x: 2px;
+	opacity: 0.8;
 }
 
 .catalog-sort .sort-submit {

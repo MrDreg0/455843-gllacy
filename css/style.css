@@ -190,6 +190,16 @@ header.container {
 	position: relative;
 }
 
+.nav-catalog-item::before {
+	position: absolute;
+	content: '';
+	width: 89px;
+	height: 5px;
+	top: 32px;
+	left: 0;
+}
+
+
 .nav-catalog-item:hover .nav-catalog-list {
 	display: block;
 	position: absolute;
@@ -334,6 +344,15 @@ header.container {
 	position: relative;
 	width: 92px;
 	padding: 7px 10px 7px 38px;
+}
+
+.login-item::before {
+	position: absolute;
+	content: '';
+	width: 92px;
+	height: 5px;
+	top: 32px;
+	left: 0;
 }
 
 .login-item svg {
@@ -493,7 +512,7 @@ header.container {
 }
 
 .header-worktime,
-.header-phone {
+.header-tel-wrapper {
 	display: block;
 	text-align: right;
 }
@@ -504,14 +523,14 @@ header.container {
 	margin-bottom: 4px;
 }
 
-.header-phone {
+.header-tel-wrapper {
 	text-align: right;
 	font-size: 22px;
 	line-height: 24px;
 	margin-bottom: 274px;
 }
 
-.creamy .header-phone {
+.creamy .header-tel-wrapper {
 	margin-bottom: 0;
 	order: 1;
 } 
@@ -1492,16 +1511,16 @@ p.contacts-tel-title {
 	align-items: center;
 }
 
-.social-button {
+.icon-feedback-list {
 	display: flex;
 	padding: 0;
 }
 
-.social-button li:not(:first-child) {
+.icon-feedback-list li:not(:first-child) {
 	margin: 0 0 0 11px;
 }
 
-.social-button li{
+.icon-feedback-list li{
 	padding: 0;
 	font-size: 0;
 	width: 32px;
@@ -1515,21 +1534,21 @@ p.contacts-tel-title {
 	cursor: pointer;
 }
 
-.social-button li:nth-child(1) {
+.icon-feedback-list li:nth-child(1) {
 	background-image: url('../img/svg/twitter.svg');
 }
-.social-button li:nth-child(2) {
+.icon-feedback-list li:nth-child(2) {
 	background-image: url('../img/svg/instagram.svg');
 }
-.social-button li:nth-child(3) {
+.icon-feedback-list li:nth-child(3) {
 	background-image: url('../img/svg/fb.svg');
 }
-.social-button li:nth-child(4) {
+.icon-feedback-list li:nth-child(4) {
 	background-image: url('../img/svg/vk.svg');
 }
 
-.social-button li:hover,
-.social-button li:focus {
+.icon-feedback-list li:hover,
+.icon-feedback-list li:focus {
 	opacity: 1;
 	border-color: rgba(255, 255, 255, 0.7);
 }

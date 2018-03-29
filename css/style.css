@@ -728,6 +728,10 @@ main.catalog {
 	opacity: 0.8;
 }
 
+.milk-fat-wrapper label:hover::before {
+	opacity: 1;
+}
+
 #milk-fat-1:checked ~ .milk-fat-wrapper label[for='milk-fat-1']::before,
 #milk-fat-2:checked ~ .milk-fat-wrapper label[for='milk-fat-2']::before,
 #milk-fat-3:checked ~ .milk-fat-wrapper label[for='milk-fat-3']::before,
@@ -785,6 +789,10 @@ main.catalog {
 	opacity: 0.8;
 }
 
+.filler-wrapper label:hover::before {
+	opacity: 1;
+}
+
 #filler-1:checked ~ .filler-wrapper label[for='filler-1']::before,
 #filler-2:checked ~ .filler-wrapper label[for='filler-2']::before,
 #filler-3:checked ~ .filler-wrapper label[for='filler-3']::before,
@@ -795,6 +803,14 @@ main.catalog {
 	background-size: 24px;
 	background-position-x: 2px;
 	opacity: 0.8;
+}
+
+#filler-1:checked ~ .filler-wrapper label[for='filler-1']:hover::before,
+#filler-2:checked ~ .filler-wrapper label[for='filler-2']:hover::before,
+#filler-3:checked ~ .filler-wrapper label[for='filler-3']:hover::before,
+#filler-4:checked ~ .filler-wrapper label[for='filler-4']:hover::before,
+#filler-5:checked ~ .filler-wrapper label[for='filler-5']:hover::before {
+	opacity: 1;
 }
 
 .catalog-sort .sort-submit {
@@ -1493,6 +1509,7 @@ p.contacts-tel-title {
 	border: 3px solid rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 	box-sizing: content-box;
+	cursor: pointer;
 }
 
 .social-button li:nth-child(1) {

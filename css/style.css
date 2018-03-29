@@ -1418,6 +1418,9 @@ p.contacts-tel-title {
 .catalog_creamy-lists li {
 	margin-left: 20px;
 	position: relative;
+}
+
+.catalog_creamy-lists li.active {
 	cursor: pointer;
 }
 
@@ -1438,7 +1441,7 @@ p.contacts-tel-title {
 	z-index: -1;
 }
 
-.catalog_creamy-lists li:not(.select):hover::after {
+.catalog_creamy-lists li.active:hover::after {
 	content:'';
 	left: -8px;
 	top: -2px;

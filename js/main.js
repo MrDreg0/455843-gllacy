@@ -41,11 +41,11 @@ window.addEventListener('keydown', function(evt) {
 feedbackSubmit.addEventListener('click', function(evt) {
 	if(!userName.value || !userEmail.value) {
 		evt.preventDefault();
-			if(!userName.value){
-				alert('Пожалуйста укажите как к Вам обращаться.');
-			}
-			else if(!userEmail.value) {
-				alert(userName.value + ', кажется Вы не указали email адрес.');
-			}
+		if(!userName.value){
+			alert('Пожалуйста укажите как к Вам обращаться.');
+		}
+		else if(!userEmail.value) {
+			alert(userName.value + ', кажется Вы не указали email адрес.');
+		}
 	}
 });

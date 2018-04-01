@@ -11,13 +11,13 @@ html {
 }
 
 @keyframes bounce {
-  0% {
-    transform: scale(0.1);
-  }
+	0% {
+		transform: scale(0.1);
+	}
 
-  100% {
-    transform: scale(1);
-  }
+	100% {
+		transform: scale(1);
+	}
 }
 
 .index-body,
@@ -414,8 +414,12 @@ header.container {
 
 .basket-item {
 	width: 117px;
-	padding: 8px 13px 8px 44px;
+	padding: 7px 13px 7px 44px;
 	position: relative;
+}
+
+.creamy .basket-item {
+	padding: 8px 13px 8px 44px
 }
 
 .basket-item::before {

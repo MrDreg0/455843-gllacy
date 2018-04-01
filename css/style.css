@@ -1114,11 +1114,11 @@ main.catalog {
 .catalog-items li {
 	position: relative;
 	width: 267px;
-	z-index: 10;
+	z-index: 7;
 }
 
 .catalog-item:hover {
-	z-index: 20;
+	z-index: 8;
 }
 
 .catalog-item.hit::after {
@@ -1326,7 +1326,7 @@ main.catalog {
 	position: absolute;
 	width: 100%;
 	border: 0;
-	z-index: 9;
+	z-index: 8;
 }
 
 .main-map .container {
@@ -1355,7 +1355,7 @@ main.catalog {
 	background-color: #fffffe;
 	color: #323232;
 	align-items: flex-start;
-	z-index: 10;
+	z-index: 9;
 }
 
 .contacts p {

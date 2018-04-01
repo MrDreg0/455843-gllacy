@@ -10,6 +10,16 @@ html {
 	box-sizing: inherit;
 }
 
+@keyframes bounce {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .index-body,
 .catalog_creamy-body {
 	margin: 0 auto;
@@ -35,6 +45,11 @@ a {
 	background-color: #f8f7f4;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	z-index: 100;
+}
+
+.show-popup {
+	display: block;
+	animation: bounce 0.5s;
 }
 
 input[type='text'],
@@ -166,7 +181,7 @@ header.container {
 	color: #ffffff;	
 }
 
-.site-navigation > li > a:active {
+.site-navigation > li:active {
 	background-color: #ffffff;
 	box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
@@ -198,7 +213,6 @@ header.container {
 	top: 32px;
 	left: 0;
 }
-
 
 .nav-catalog-item:hover .nav-catalog-list {
 	display: block;
@@ -1308,6 +1322,13 @@ main.catalog {
 	background-repeat: no-repeat;
 }
 
+.interactive-map {
+	position: absolute;
+	width: 100%;
+	border: 0;
+	z-index: 9;
+}
+
 .main-map .container {
 	min-height: 430px;
 	display: flex;
@@ -1334,6 +1355,7 @@ main.catalog {
 	background-color: #fffffe;
 	color: #323232;
 	align-items: flex-start;
+	z-index: 10;
 }
 
 .contacts p {
@@ -1387,17 +1409,25 @@ p.contacts-tel-title {
 	z-index: 9;
 }
 
+.show-overlay {
+	display: block;
+}
+
 .block-feedback-form {
 	display: none;
 	position: fixed;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-left: -238px;
 	top: 338px;
 	background-color: #f8f7f4;
 	border-radius: 10px;
 	width: 477px;
 	padding: 20px 23px 23px 23px;
 	z-index: 10;
+}
+
+.show-popup {
+	display: block;
 }
 
 .block-feedback-form h3 {
@@ -1415,7 +1445,7 @@ p.contacts-tel-title {
 	float: right;
 }
 
-.close-button {
+.close-feedback_form {
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -1427,6 +1457,7 @@ p.contacts-tel-title {
 	background-color: transparent;
 	background-image: url('../img/png/x-big.png');
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .block-feedback-form input[type='text'] {

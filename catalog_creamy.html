@@ -47,7 +47,7 @@
 							<!-- Конец блока меню входа -->
 					</li>
 					<li class='basket-item adds header-button-cell'>
-						<svg width="21" height="20"><g fill="#FFF"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+						<svg width="21" height="20"><g fill="#FFF"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></g></svg>
 						<button type='button' class='user-nav-button'>2 товара</button>
 
 						<!-- Начало блока корзины -->
@@ -93,7 +93,7 @@
 		
 		<!-- Начало основного блока каталога -->
 		<main class="container catalog">
-			<h1 class="catalog_creamy-list-name">Сливочное мороженое</h2>
+			<h1 class="catalog_creamy-list-name">Сливочное мороженое</h1>
 			<!-- Форма сортировки -->
 			<h2 class="visually-hidden">Форма сортировки и каталог товаров</h2>
 			<form action="https://echo.htmlacademy.ru" class="catalog-sort">
@@ -107,7 +107,7 @@
 					</select>
 					<svg width="11px" height="10px" class='sort-arrow'><polyline fill="#231F20" points="5.5,10 0,0 11,0 "/></svg>
 				</label>
-				<label class='range-label'>
+				<div for='range' class='range-block'>
 					<b>Цена: <span class="low-range">100</span> руб. - <span class="high-range">500</span> руб.</b>
 					<div class="range-controls form-style">
 						<div class="scale">
@@ -117,7 +117,7 @@
 						<div class="range-toggle range-toggle-max"></div>
 					</div>
 					<input type="range" class='visually-hidden' id='range' min='0' max='1000'>
-				</label>
+				</div>
 				<div class='milk-fat-box'>
 					<b>Жирность:</b>
 					<input type="radio" name='milk-fat' id='milk-fat-1' class='visually-hidden' value='0'>
@@ -267,7 +267,6 @@
 			<ul class="catalog_creamy-lists">
 				<li class="catalog-list-item-pver">
 					<svg width="8" height="12"><path fill="#ffffff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-					<a href="#"><</a>
 				</li>
 				<li class="catalog-list-item-1 select">1</li>
 				<li class="catalog-list-item-2 active"><a href="#">2</a></li>
@@ -276,7 +275,6 @@
 				<li class="catalog-list-item-5 active"><a href="#">5</a></li>
 				<li class="catalog-list-item-next active">
 					<svg width="8" height="12"><path fill="#ffffff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-					<a href="#">></a>
 				</li>
 			</ul>
 			<!-- Конец переключателя страниц товара -->
@@ -300,9 +298,9 @@
 					</ul>
 				</nav>
 				<div class="footer-copyrights">
-					<img src="img/svg/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39"></a>
 					<div class="footer-copyrights-wrapper">
-						Сделано в <a href="https://htmlacademy.ru" class="footer-copyrights-logo">HTML Academy</a> &copy; 2017
+						Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyrights-logo">HTML Academy</a> &copy; 2017
 					</div>
 				</div>
 			</footer>

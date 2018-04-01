@@ -633,7 +633,6 @@ main.catalog {
 	background-color: rgba(248, 247, 244, 0.2);
 	color: #ffffff;
 	border-radius: 50px;
-	cursor: pointer;
 	margin-top: 5px;
 }
 
@@ -698,7 +697,7 @@ main.catalog {
 	width: 195px;
 }
 
-.range-label b{
+.range-block b{
 	padding-left: 14px;
 }
 

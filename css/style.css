@@ -32,6 +32,15 @@ html {
 	background-color: #849d8f;
 }
 
+.catalog_creamy-body::before {
+	content: '';
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+	z-index: -1;
+}
+
 a {
 	color: #ffffff;
 	text-decoration: none;

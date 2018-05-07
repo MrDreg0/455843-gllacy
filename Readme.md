@@ -3,7 +3,7 @@
 * Студент: [Anton Shumihin](https://up.htmlacademy.ru/htmlcss/20/user/455843).
 * Наставник: [Юлька Долгун](https://up.htmlacademy.ru/htmlcss/20/user/42333).
 
-* [Preview site](https://mrdreg0.github.io/gllacy).
+* Preview site: [Gllacy](https://mrdreg0.github.io/gllacy).
 
 ---
 
